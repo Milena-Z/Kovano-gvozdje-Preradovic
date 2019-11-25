@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+    <title>Kovano gvozdje Preradovic</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script defer src="script/script.js"></script>
+</head>
+
+<body>
+<header>
+    <img src="img/blacksmith.png" alt="Kovano gvozdje Preradovic - logo" class="logo" width="100" height="100">
+    <nav>
+        <ul>
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="about.html">O nama</a></li>
+            <li><a href="proizvodi.html">Proizvodi</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div id="error"></div>
+<form id="form" action="/" method="GET">
+    <div class="form">
+        <br>
+        <p class="p-forma">Ispod možete ostaviti vaše podatke i poruku ili pitanje, a mi ćemo u najkraćem roku odgovoriti.</p>
+        <label for="ime" class="label-name"><span class="content-name">Ime</span></label>
+        <br>
+        <input id="ime" name="ime" type="text" autocomplete="off" required>
+        <br>
+        <label for="prezime" class="label-name"><span class="content-name">Prezime</span></label>
+        <br> 
+        <input id="prezime" name="prezime" type="text" autocomplete="off" required>
+        <br>
+        <label for="email" class="label-name"><span class="content-name">E-mail adresa</span></label>
+        <br>
+        <input id="email" name="email" type="text" autocomplete="off" required>
+        <br>
+        <label for="poruka" class="label-name"><span class="content-name">Poruka</span></label>
+        <br>    
+        <input id="poruka"  class="poruka" name="poruka" type="text" autocomplete="off" required>
+        <br>
+        <button class="button button-light button-small" type="submit">Prosledi</button>
+    </div>
+</form>
+
+
+</body>
+
+
+</html>
