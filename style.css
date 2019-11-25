@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    transition: all ease-in-out 250ms;
+}
+
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    background-color: #181818;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+/* --------- typography --------- */
+.naslov-tip1 {
+    font-size: 2rem;
+    color: #eeeeee ;
+    margin-bottom: 2.5em;
+}
+
+.naslov-tip1 span {
+    font-weight: 300;
+    font-size: 0.9em;
+}
+
+.naslov-tip2{
+    font-size: 2rem;
+    color: #eeeeee ;
+    margin-bottom: 2.5em;
+    flex-wrap: wrap;
+}
+
+.naslov-tip2 span {
+    font-weight: 300;
+    font-size: 0.9em;
+}
+
+@media (min-width: 60rem) {
+    .naslov-tip1{
+        font-size: 3rem;
+    }
+    .naslov-tip2{
+        font-size: 3rem;
+    }
+}
+
+/* --------- buttons --------- */
+.button {
+    display: inline-block;
+    font-size: 1.15rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-width: 2px;
+    border-style: solid;
+    padding: .4em 1.2em;
+}
+
+.button-light {
+    color: lightsteelblue;
+}
+
+.button:hover {
+    background-color: lightsteelblue;
+    color: #232931;
+}
+
+.button-footer {
+font-size: small;
+}
+
+@media (min-width: 60rem) {
+   .button {
+       font-size: 1.3rem;
+   }
+}
+
+.button-small {
+    font-size: .7rem;
+    font-weight: 700;
+}
+
+/* --------- header --------- */
+
+header {
+    position: absolute;
+    margin-top: 1em;
+    left: 0;
+    right: 0;
+    /* rem and em are relative units, while px is not; pogledati klip na yt */
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0.8em;
+}
+
+nav a {
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.5em;
+    color: #FFF;
+}
+
+nav a:hover {
+    color: lightsteelblue;
+} 
+
+@media (min-width: 60rem) {
+    .logo {
+        float: left;
+        padding-left: 2em;
+    }
+
+    nav {
+        float: right;
+    }
+}
+
+/* --------- front --------- */
+
+.front {
+    background-image: url(../img/front-background1.jpg);
+    background-color: #181818;
+    background-size: cover;
+    background-blend-mode: lighten;
+    background-position: center;
+    padding: 12em 0;
+}
+
+@media (min-width: 60rem) {
+    .front{
+        height: 100vh;
+        padding-top: 30vh;
+    }
+}
+
+
+/* ----------- about -------- */
+
+.o-nama-txt-box {
+    color: white;
+    text-align: center;    
+    padding: 150px;
+    font-size: 120%;
+}
+
+/* ----------- portfolio -------- */
+
+.portfolio{
+    padding: 1em;
+    padding-top: 10rem;
+    margin: 3em 0;
+}
+
+.portfolio-item {
+    margin: 0;
+    position: relative;
+}
+
+.portfolio-item img {
+    padding: 0.5em;
+}
+
+.portfolio-description {
+    position: absolute;
+    z-index: 100;
+    color: white;
+    bottom: 0em;
+    left: 0em;
+    right: 0em;
+    background: rgba(0,0,0,.6);
+    padding-top: 0.5em;
+    padding-bottom: 2em;
+}
+
+@media (min-width: 38rem) {
+    .portfolio-item {
+        width: 50%;
+        float: left;
+
+    }
+}
+
+@media (min-width: 60rem) {
+    .portfolio-item {
+        width: 33.3333334%;
+        float: left; 
+        overflow: hidden;
+    }
+    .portfolio-description {
+        transform: translateY(150%);
+    }
+
+    .portfolio-item:hover .portfolio-description{
+        transform: translateY(0%);
+    }
+}
+
+/* ----------- forma -------- */
+#form {
+    position: center;
+}
+
+.form {
+    height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    padding: 2rem;
+}
+
+.p-forma {
+    padding-top: 10rem;
+}
+
+.form input {
+    width: 50%;
+    height: 100%;
+    color: lavander;
+    padding: 5px;
+    border: none;
+}
+
+/* ----------- footer -------- */
+footer {
+    background-color: #181818;
+    color: white;
+    position: static;
+}
